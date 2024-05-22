@@ -1,0 +1,88 @@
+
+@media (max-width: 576px) {
+    .navbar-nav {
+        margin: 0 auto;
+        display: table;
+        table-layout: fixed;
+    }
+}
+.navbar-nav{
+    float: right;
+    text-align: center;
+}
+.container-fluid.about{
+    margin-top: 0px;
+    height: fit-content;
+    width: 100%;
+    padding: 2%;
+    background-color: lightgray;
+}
+.container-fluid.projects{
+    margin-top: 0px;
+    height: fit-content;
+    width: 100%;
+    padding: 4%;
+    background-color: white;
+}
+.card.about{
+    /* margin:7vh 7vh 7vh 7vh; */
+    box-shadow: 10px lightgray;
+    height: fit-content;
+    /* background-color: lightgray; */
+}
+.card.about .about-info{
+    padding:4%;
+    justify-content: center;
+    align-content: center;
+}
+img.about{
+    margin:5%;
+    height: 350px;
+    width: 90%;
+    /* margin-left:10px; */
+}
+.card.projects{
+    border: 5px solid rgba(142, 22, 22, 0.25);
+    border-radius: 20px;
+    background-color: rgba(232, 228, 228, 0.45);
+    backdrop-filter: blur(10px);
+    height: fit-content;
+}
+.projects-heading{
+    padding: 2%;
+    color: rgb(116, 107, 107);
+    font-size: 30px;
+    text-align: center;
+    font-weight:1000;
+    /* font-size */
+}
+@keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(80px); /* Start 20px below */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0); /* End at normal position */
+    }
+  }
+
+  .fade-in-up {
+    animation: fadeInUp 2s ease-out; /* 1 second duration */
+  }
+.card.project{
+    
+    box-shadow: 1%;
+    margin:0% 2% 1% 1%;
+    background-color: whitesmoke;
+    animation: fadeInBottom 1s ease-in-out forwards;
+
+}
+.card.project.heading{
+    margin:1% 1% 0%;
+    border: none;
+    color: rgb(86, 83, 83);
+}
+.card.project p{
+    margin:0% 1.5%;
+}
